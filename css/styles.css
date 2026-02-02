@@ -1,6 +1,75 @@
-body{
-    font-family:Arial, Helvetica, sans-serif
+body {
+    font-family: sans-serif;
+    background:linear-gradient(135deg,rgb(25, 175, 250),rgb(0, 125, 200), rgb(0, 75, 150));
+    height: 100vh;
 }
-h1{
-    color: darkred;
+
+.card {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, .5) 0px 5px 15px;
+}
+
+.name {
+    color: rgb(25, 25, 25);
+    margin: 20px 0 5px 0;
+}
+
+.title {
+    color: rgb(100, 100, 100);
+    font-size: 20px;
+    font-weight: 100;
+    text-transform: capitalize;
+    margin: 5px 0 20px 0;
+}
+
+.bio {
+    line-height: 1.75;
+    color: rgb(25, 25, 25);
+}
+
+.avatar {
+    border: 4px solid rgb(150, 150, 150);
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, .5) 0px 5px 15px;
+
+}
+
+.skills {
+    margin: 30px 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 20px;
+}
+
+.skills li {
+    background-color: rgb(200, 200, 200);
+    padding: 8px 16px;
+    border-radius: 12px;
+    color: rgb(25, 25, 25);
+}
+
+.contact-btn {
+    display: block;
+    padding: 15px;
+    background-color: rgb(25, 175, 250);
+    border-radius: 10px;
+    color: rgb(25, 25, 25);
+    text-decoration: none;
+    margin-top: 30px;
+    transition: all .3s ease-in-out;
+    color: white;
+}
+
+.contact-btn:hover {
+    background-color: rgb(0, 75, 150);
+    transform: translateY(-4px);
 }
