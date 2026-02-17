@@ -1,0 +1,31 @@
+.headerClass img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerClass h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.headerClass ul {
+    list-style: none;
+    text-align: center;
+}
+
+.headerClass li {
+    display: inline;
+    margin-right: 20px;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+div{
+    font-size: 10px;
+}

@@ -1,0 +1,100 @@
+:root {
+    --primary: rgb(76, 52, 224);
+    --secondary: rgb(225, 201, 111);
+    --tertiary: rgb(255, 227, 213)
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifF;
+    background-color: var(--primary);
+    text-align: center;
+}
+
+header {
+    color: white;
+    font-size: 32px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: .2em;
+    font-size: .6em;
+    margin-bottom: 7px;
+    margin-top: 40px;
+}
+
+header h2 {
+    margin-top: 7px;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+    font-size: 28px;
+}
+
+.card-face {
+    font-size: 2em;
+    padding-top: 15px;
+}
+
+.card-title {
+    color: var(--secondary);
+}
+
+.card-price {
+    font-size: 2em;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.dollar {
+    font-size: .5em;
+    font-weight: 500;
+}
+
+.card-perks {
+    font-size: .5em;
+    color: gray;
+    line-height: 1.8em;
+}
+
+.card-perks ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2em;
+}
+
+.card-cta{
+    color: var(--primary);
+    font-size: .5em;
+    font-weight: 800;
+    padding-bottom: 50px;
+}
+.card-cta a:hover{
+    transform: translateY(-100px);
+    background-color: var(--primary);
+    padding: 15px 55px;
+    color: white;
+    transition: all .3s ease;
+}
+main{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+}
+.card-banner{
+    background-color:var(--tertiary);
+    color: var(--primary);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: .7em;
+    width: 80%;
+    padding: 15px 0px;
+    margin: auto;
+}
