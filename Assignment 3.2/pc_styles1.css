@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: Champagne;
+	src: url(cac_champagne.woff) format('woff'),
+	     url(cac_champagne.ttf) format('ttf');
+}
+
+/* HTML and Body Styles */
+:root{
+   --blue1:#B3CDE0;
+   --blue2:#6497B1;
+   --blue3:#005B96;
+   --blue4:#03396C;
+   --blue5:#011F4B;
+}
+
+html {
+   background-color:var(--blue2);
+   font-family: Verdana, Geneva, Arial, sans-serif; 	
+}
+
+body {
+   background-color: var(--blue3);  
+}
+
+
+/* Horizontal Navigation Styles */
+
+nav.horizontalNavigation a {
+   background-color: var(--blue4);
+   font-family: Champagne, cursive;
+   font-size: 1.4em;
+   line-height: 1.8em;
+   text-align: center;
+}  
+
+nav.horizontalNavigation a:link, 
+nav.horizontalNavigation a:visited {
+   color: var(--blue1);
+}
+
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+   background-color:var(--blue5);
+}   
+
+
+/* Left Column Paragraph Styles */
+
+section#leftColumn p {
+   color: var(--blue1);
+   font-size: 0.9em;
+   line-height: 1.6em;
+}
+
+
+/* Footer Styles */
+
+body > footer {
+   font-size: 0.9em;
+   color: var(--blue1);
+}
+
+body > footer h1 {
+   color: var(--blue1);
+   font-size: 1.1em;
+   font-weight: normal;
+   letter-spacing: 0.2em;
+   margin: 1em 0 0.5em 1em;
+}
+
+/* Vertical Navigation Styles */
+
+nav.verticalNavigation ul {
+   margin-left: 1em;
+   line-height: 2em;
+}
+
+nav.verticalNavigation a:link, 
+nav.verticalNavigation a:visited {
+   color: var(--blue1);
+}
+
+nav.verticalNavigation a:hover, 
+nav.verticalNavigation a:active {
+   text-decoration: underline;
+}
+
+/* Contact Info Styles */
+
+section#contactInfo p {
+   line-height: 1.4em;
+   margin: 1em;
+}   
+
