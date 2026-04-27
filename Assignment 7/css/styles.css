@@ -1,0 +1,92 @@
+:root {
+    --orange1: #F58026;
+    --red1: #B6121B;
+}
+
+body {
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 1rem;
+    max-width: 60%;
+    margin: auto;
+    padding: 0;
+}
+
+header {
+    color: white;
+    background: linear-gradient(var(--orange1), var(--red1));
+    padding: .2rem;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    border-radius: 1rem 1rem 0 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+main {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 1rem;
+}
+
+main h2 {
+    letter-spacing: .2rem;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    margin: 1rem;
+    padding-bottom: .1rem;
+}
+
+.homeContainerTop {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.homeContainerTop a {
+    background: linear-gradient(var(--orange1), var(--red1));
+    padding: .5rem;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    border-radius: .2rem;
+}
+
+.homeContainerTop a:hover {
+    transform: scale(1.2);
+}
+
+.homeContainerBottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.homeContainerBottom img {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+hr {
+    height: 5px;
+    background: var(--red1);
+    border: 0;
+}
+
+.btn {
+    background: linear-gradient(var(--orange1), var(--red1));
+    padding: .5rem;
+    position: absolute;
+    right: 365px;
+    color: white;
+    text-decoration: none;
+    border-radius: .2rem;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
