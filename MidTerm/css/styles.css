@@ -1,0 +1,291 @@
+:root {
+    --DarkestBlue: #003A6B;
+    --DarkerBlue: #1B5886;
+    --DarkBlue: #3776A1;
+    --LightBlue: #5293BB;
+    --LighterBlue: #6EB1D6;
+    --LightestBlue: #89CFF1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header {
+    background: linear-gradient(135deg, var(--DarkestBlue), var(--DarkBlue));
+    color: white;
+    display: flex;
+    padding: .8rem;
+    width: 100vw;
+}
+
+header h1 {
+    margin-left: 5rem;
+}
+
+header img {
+    width: 6rem;
+}
+
+.searchBox {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: right;
+    margin: auto;
+    margin-right: 1.5rem;
+    height: 3rem;
+    width: 30rem;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width:1024px) {
+    .searchBox {
+        scale: 90%;
+    }
+
+    .homeWhoWeAre {
+        flex-direction: column;
+    }
+
+    .homeWhoWeAre div {
+        text-align: center;
+        margin-bottom: -10rem;
+    }
+
+    .homeWhoWeAre img {
+        display: none;
+    }
+
+    .homeCardContainer {
+        flex-wrap: wrap;
+    }
+
+    .homeAgentCard {
+        margin: 1rem;
+    }
+
+    .listingContainer{
+        background-color: black;
+    }
+}
+
+.searchBox p {
+    color: rgb(102, 102, 102);
+    margin-left: 1rem;
+    margin-right: auto;
+}
+
+.searchBox a {
+    text-decoration: none;
+    color: white;
+    padding: .3rem 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    background-color: var(--DarkestBlue);
+}
+
+.searchBox a:hover {
+    background-color: var(--DarkerBlue);
+}
+
+.fillerQuote {
+    font-style: italic;
+    align-self: center;
+    margin-left: 3rem;
+}
+
+footer {
+    background-color: var(--DarkestBlue);
+    color: var(--LightestBlue);
+    padding: .8rem;
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+}
+
+.footerLinks {
+    display: flex;
+    list-style: none;
+}
+
+.footerLinks a {
+    margin-right: 2rem;
+    text-decoration: none;
+    color: var(--LightestBlue);
+}
+
+.footerLinks a:hover {
+    text-decoration: underline;
+}
+
+.footerLegal {
+    margin: 0;
+    margin-top: 2rem;
+    font-style: italic;
+    font-size: .7rem;
+}
+
+.homeWhoWeAre {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.homeWhoWeAre img {
+    width: 200%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+
+.homeWhoWeAre div {
+    margin: 2rem;
+    color: var(--DarkestBlue);
+    line-height: 1.75rem;
+}
+
+.homeWhoWeAre h2 {
+    font-size: 2rem;
+}
+
+.homeCheckout {
+    margin: 2rem;
+}
+
+.homeCheckout h2 {
+    color: var(--DarkestBlue);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.homeCheckout img {
+    scale: 90%;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.homeCheckout img:hover {
+    scale: 100%;
+}
+
+.homeExperts {
+    margin: 2rem;
+    position: relative;
+}
+
+.homeExperts h2 {
+    font-size: 2rem;
+    color: var(--DarkestBlue);
+}
+
+.homeAgentCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: .1rem;
+    color: var(--DarkestBlue);
+}
+
+.homeAgentCard img {
+    border-radius: 50%;
+}
+
+.homeCardContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.homeExperts a {
+    text-decoration: none;
+    color: var(--DarkestBlue);
+    position: absolute;
+    right: 1rem;
+    font-weight: bold;
+}
+
+.homeExperts a:hover {
+    text-decoration: underline;
+}
+
+.agentsCard {
+    display: flex;
+    margin: 2rem;
+    color: var(--DarkestBlue);
+}
+
+.agentsCard img {
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.agentsCard div {
+    margin: right 2rem;
+    ;
+    width: 650px;
+
+}
+
+.agentsCard div::first-line {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.agentsCard p {
+    line-height: 1.75rem;
+}
+
+hr {
+    height: 5px;
+    background: var(--LighterBlue);
+    border: 0;
+    max-width: 95vw;
+}
+
+.listingContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    max-width: 90vw;
+    border-radius: 2rem;
+    background: repeating-linear-gradient(var(--LightestBlue) 30%, var(--LighterBlue) 30%);
+}
+
+.listingCard {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    background-color: white;
+    border-radius: 1.5rem;
+    margin: 1.5rem;
+    color: var(--DarkestBlue);
+    width: 650px;
+}
+
+.listingCard img {
+    margin-right: 1rem;
+    width: 420px;
+    border-radius: 1rem;
+}
+.contactContainer{
+    display: flex;
+    color: var(--DarkestBlue);
+    line-height: 2rem;
+    margin: 2rem;
+}
+.contactCard{
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+.contactCard a{
+    text-decoration: none;
+    color: var(--DarkerBlue);
+}
+.contactCard a:hover{
+    text-decoration: underline;
+}
