@@ -126,10 +126,12 @@ footer {
     align-items: center;
     justify-content: center;
 }
-main{
+
+main {
     width: 60%;
 }
-main h2{
+
+main h2 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 30px;
@@ -137,19 +139,36 @@ main h2{
     margin-left: 440px;
     color: var(--OceanBlue);
 }
-main p{
+
+main p {
     margin-left: 460px;
     font-size: 20px;
 }
-main ol{
-    margin-left: 445px;
+
+main ol {
+    margin-left: 75px;
     font-size: 20px;
 }
-main hr{
+
+main hr {
     height: 2px;
     border: none;
     background-color: var(--MidGrey);
     margin-left: 410px;
-    margin-top:50px;
+    margin-top: 50px;
     width: 760px;
+}
+
+.favMovieContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.favMovieContainer img{
+    position: relative;
+    top: -55px;
+    left: -95px;
+}
+.favMovieContainer ol{
+    position: relative;
+    top: -15px;
 }
