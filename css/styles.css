@@ -1,3 +1,4 @@
+/*Default webstite syles */
 :root {
     --LightGray: #d3d3d3;
     --Silver: #c0c0c0;
@@ -17,6 +18,9 @@ body {
     padding: 0;
     background-color: var(--LightSlateGrey);
     color: var(--Silver);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -26,6 +30,9 @@ header {
     justify-content: space-between;
     height: 125px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 header h1 {
@@ -61,8 +68,10 @@ nav {
     width: 20%;
     background-color: var(--MidGrey);
     margin-bottom: 0;
-    height: 100vh;
-    float: left;
+    top: 125px;
+    height: calc(100vh - 125px);;
+    position: fixed;
+    z-index: 1;
 }
 
 nav h2 {
@@ -125,10 +134,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
 
 main {
     width: 60%;
+    margin-left: 20%;
+    padding: 0 20px;
+    flex: 1;
 }
 
 main h2 {
@@ -136,12 +149,11 @@ main h2 {
     letter-spacing: 2px;
     font-size: 30px;
     margin-top: 50px;
-    margin-left: 440px;
     color: var(--OceanBlue);
 }
 
 main p {
-    margin-left: 460px;
+    margin-left: 20px;
     font-size: 20px;
 }
 
